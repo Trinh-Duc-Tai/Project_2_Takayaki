@@ -1,0 +1,129 @@
+.font-logo {
+    font-family: 'Philosopher', sans-serif;
+}
+.mauhong{
+    color: #FF0266;
+}
+.font-text {
+    font-family: 'KoHo', sans-serif;
+}
+
+.bg-image {
+    background-image: url("../images/bg02.jpg");
+    background-size: cover;
+}
+
+.h-850px {
+    height: 850px;
+}
+
+.bg-main {
+    background-color: rgba(45, 52, 60, 0.3);
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.bg-zoom {
+    transition: transform .2s;
+}
+
+.bg-zoom:hover {
+    transform: scale(1.1);
+}
+
+tbody {
+    width: 100%;
+    height: 250px;
+    overflow: auto;
+}
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+    text-shadow: 0 0 10px #FF0266, 0 0 20px #FF0266, 0 0 30px rgb(252, 20, 113), 0 0 40px rgb(252, 20, 113), 0 0 50px rgb(252, 20, 113), 0 0 60px rgb(252, 20, 113), 0 0 70px rgb(252, 20, 113);
+    }
+    to {
+    /* text-shadow: 0 0 20px #5DBCD2, 0 0 30px rgb(46, 147, 170), 0 0 40px rgb(46, 147, 170), 0 0 50px rgb(46, 147, 170), 0 0 60px rgb(46, 147, 170), 0 0 70px rgb(46, 147, 170), 0 0 80px rgb(46, 147, 170); */
+    text-shadow: 0 0 20px #FF0266, 0 0 30px rgb(230, 4, 94), 0 0 40px rgb(230, 4, 94), 0 0 50px rgb(230, 4, 94), 0 0 60px rgb(230, 4, 94), 0 0 70px rgb(230, 4, 94), 0 0 80px rgb(230, 4, 94);
+    }
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #fff; /* Black background color */
+    color: #FF0266; /* White text color #5DBCD2*/
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 10px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    left: 20%; /* Center the snackbar */
+    bottom: 30px; /* 50px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible;
+    /* Add animation: Take 1 seconds to fade in and out the snackbar. 
+   /* However, delay the fade out process for 10 seconds */
+    -webkit-animation: fadeIn 1s, fadeOut 1s 10s;
+    animation: fadeIn 1s, fadeOut 1s 10s;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar1 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color:#fff; /* Black background color */
+    color: #FF0266; /* White text color #5DBCD2*/
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Rounded borders */
+    padding: 10px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    left: 27%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar1.show {
+    visibility: visible;
+    /* Add animation: Take 1 seconds to fade in and out the snackbar. 
+   /* However, delay the fade out process for 5 seconds */
+    -webkit-animation: fadeIn 1s, fadeOut 1s 5s;
+    animation: fadeIn 1s, fadeOut 1s 5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadeIn {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
